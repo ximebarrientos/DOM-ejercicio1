@@ -11,3 +11,15 @@ function empezarJuego(){
     numeroMagico=Math.floor(Math.random()*100)+1
     console.log(numeroMagico)
 }
+
+function chequearNumeroIngresado(){
+    console.log("Desde funcion chequear numero ingresado")
+    let numeroIngresado=document.getElementById("numero")
+    if(numeroIngresado===numeroMagico){
+        alert("GANASTEEE! 🍾🍻🙌🎊😎")
+    } else if(numeroIngresado<numeroMagico) {
+        alert("El número mágico es mayor al que ingresaste")
+    } else {
+        alert("El número mágico es menor al que ingresaste")
+    }
+}
