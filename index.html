@@ -18,10 +18,10 @@
             <h2 class="display-6 mb-3">¿Adivinarás el número?</h2>
             <button class="btn btn-outline-light p-3 fs-3 mb-3" id="comenzarJuego" onclick="empezarJuego()"><i class="bi bi-joystick"></i> Comenzar el juego</button>
             <div>
-                <form>
+                <form onsubmit="chequearNumeroIngresado()">
                     <label for="numero">Ingresa el número mágico</label>
                     <input type="number" placeholder="Entre 1 y 100" minlength="1" maxlength="3" required id="numero">
-                    <button type="submit" class="btn btn-outline-primary" id="controlarNumero" onclick="chequearNumeroIngresado()">Enviar</button>
+                    <button type="submit" class="btn btn-outline-primary" id="controlarNumero">Enviar</button>
                 </form>
             </div>
         </section>
