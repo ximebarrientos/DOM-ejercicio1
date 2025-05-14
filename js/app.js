@@ -13,6 +13,7 @@ function empezarJuego(){
 }
 
 function chequearNumeroIngresado(e){
+    e.preventDefault()
     console.log("Desde funcion chequear numero ingresado")
     let numeroIngresado=document.getElementById("numero").value
     if(numeroIngresado===numeroMagico){
