@@ -18,10 +18,10 @@ function chequearNumeroIngresado(e){
     console.log("Desde funcion chequear numero ingresado",numeroMagico)
     let numeroIngresado=parseInt(document.getElementById("numero").value)
     if(numeroIngresado===numeroMagico){
-        alert("GANASTEEE! 🍾🍻🙌🎊😎"+numeroMagico+numeroIngresado)
+        alert("GANASTEEE! 🍾🍻🙌🎊😎"+numeroMagico)
     } else if(numeroIngresado<numeroMagico) {
-        alert("El número mágico es mayor al que ingresaste"+numeroMagico)
+        alert("El número mágico es mayor al que ingresaste")
     } else {
-        alert("El número mágico es menor al que ingresaste"+numeroMagico)
+        alert("El número mágico es menor al que ingresaste")
     }
 }
